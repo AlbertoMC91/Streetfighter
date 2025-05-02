@@ -109,3 +109,116 @@ button {
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        box-sizing: border-box;
+    }
+
+    td {
+        width: 25%;
+        text-align: center;
+        padding: 0.5rem;
+        word-wrap: break-word;
+    }
+
+    td span {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    td img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .botones {
+        gap: 2vh;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2vh;
+    }
+
+    .botones button {
+        min-width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    td span {
+        font-size: 12px;
+    }
+
+    td img {
+        max-width: 70px;
+        height: auto;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .botones { 
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botones button {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    h1, h2 {
+        font-size: 1rem;
+    }
+
+    td img {
+        max-width: 60px;
+    }
+
+    .botones button {
+        padding: 0;
+        font-size: 0.8rem;
+    }
+}
